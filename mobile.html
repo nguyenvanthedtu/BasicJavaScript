@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("input[value='radio1']").click(function(){
+            $("#abc").show("slow");
+        })
+        $("input[value='radio2']").click(function(){
+            $("#abc").hide("slow");
+        })
+        $("input[value='radio3']").click(function(){
+            $("#abc").show("fast");
+        })
+        $("input[value='radio4']").click(function(){
+            $("#abc").hide("fast");
+        })
+        $("input[value='radio5']").click(function(){
+            $("#abc").show(3000);
+        })
+        $("input[value='radio6']").click(function(){
+            $("#abc").hide(3000);
+        })
+    })
+</script>
+</head>
+<body>
+  <p><input type="radio" name="abc" value="radio1" checked>show("slow")</p>
+  <p><input type="radio" name="abc" value="radio2">hide("slow")</p>
+  <p><input type="radio" name="abc" value="radio3">show("fast")</p>
+  <p><input type="radio" name="abc" value="radio4">hide("fast")</p>
+  <p><input type="radio" name="abc" value="radio5">show(3000)</p>
+  <p><input type="radio" name="abc" value="radio6">hide(3000)</p>
+  <div style="background-color:brown;height:200px" id="abc"></div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./image/Background.png");
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px ;
+    box-sizing: border-box;
+    z-index: 99;
+}
+.nav-logo {
+    float: left;
+    height: 100%;
+    line-height: 80px;
+    display: flex;
+    font-size: 25px;
+}
+.nav-logo .p1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.nav-logo .p2 {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.nav-bar ul {
+    float: right;
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+.nav-bar ul li {
+    list-style: none;
+}
+.nav-bar ul li a {
+    position: relative;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-bar ul li a:before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 80%;
+    height: 52%;
+    border-radius: 10px;
+    background: #608AF5;
+    transform-origin: right;
+    z-index: -1;
+    transform: scaleX(0);
+    transition:  transform 0.5s;
+}
+.nav-bar ul li a:hover:before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.nav-bar ul li a:hover{
+    color: white;
+}
+.hero {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 217px;
+    left: 100px;
+    top: 203px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 52px;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+.hero-description {
+    font-weight: bold;
+}
+.description-child {
+    font-size: 21px;
+}
+.hero-content {
+    width: 40%;
+}
+.hero-img {
+    margin-top: -50px;
+}
+.background-image{
+    background-image: url("./image/Background.png");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ 
+}
+.passions-title{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.passions-title-dev{
+   
+}
